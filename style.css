@@ -1,0 +1,339 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("img/istockphoto-1419766496-2048x2048-transformed.jpeg") no-repeat
+    center center fixed;
+  background-size: cover;
+  color: #fff;
+  line-height: 1.6;
+  height: 700vh;
+}
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+}
+ul li {
+  list-style-type: none;
+}
+header .nav-link {
+  color: white;
+}
+header .nav-link form button {
+  color: white;
+  font-weight: bold;
+}
+header .nav-link:hover {
+  color: #ffcc00;
+}
+#dark-mode-btn {
+  font-size: 24px;
+  color: #ffcc00;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  margin: 10px 0;
+}
+
+#dark-mode-btn:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+#cart {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-size: 24px;
+  color: #fff;
+  background-color: #ffcc00af;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+#cart:hover {
+  background-color: #e6b800;
+  transform: scale(1.1);
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: #ffcc00;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.scroll-to-top:hover {
+  background-color: #e6b800;
+  transform: scale(1.1);
+}
+
+#carousel {
+  width: 90%;
+  margin: 10vh auto 0;
+  height: 50vh;
+
+  background-color: #ffffff14;
+}
+
+#carousel .carousel-item h1 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  color: #ffcc00;
+}
+.asd {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+.asd:hover {
+  background-color: #ffcc009f;
+}
+.mohamed1 {
+  position: absolute;
+  left: 50%;
+  bottom: -4%;
+  transform: translate(-50%, -50%);
+  font-size: 23px; box-shadow: 0px 0px 2px 6px #ff0000; background-color: #000000; color: #ffffff;
+
+}
+#img1 {
+  height: 45vh;
+  width: 100%;
+}
+
+.modal-backdrop.show {
+  z-index: 1;
+}
+
+#Services,
+#products,
+#offers,
+#testimonials,
+#contact {
+  padding: 100px 20px;
+}
+.card-services {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 26vh;
+}
+@media (max-width: 991px) {
+  .card-services {
+    height: fit-content;
+  }
+}
+.card-services .card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #00d1ff;
+}
+.card-services:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.7);
+}
+#link-productes {
+  color: #007bff;
+  font-size: 22px;
+  background-color: #7373737a;
+  padding: 10px 20px;
+  border-radius: 40px;
+}
+.text-info {
+  --bs-text-opacity: 1;
+  color: rgb(255 218 8) !important;
+  font-size: 20px;
+}
+#card-productes {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: 1s;
+}
+#card-productes:hover {
+  transform: translateY(-20px);
+  box-shadow: -1px 0px 3px 8px #006eff;
+  /* transform: scale(); */
+}
+#card-productes img {
+  height: 300px;
+  border-radius: 10px;
+}
+#card-offers {
+  border: 1px solid #ddd;
+  padding: 16px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: -1px 0px 3px 8px #0fa9d2;
+  transition: 1s;
+}
+#card-offers:hover {
+  transform: translateY(-20px);
+  box-shadow: -1px 0px 3px 8px #006eff71;
+  /* transform: scale(); */
+}
+#span-offers {
+  color: rgb(27 255 0 / 87%);
+  box-shadow: 0px 0px 20px 0px #0a58ca;
+}
+#carousel2 {
+  background-color: #ffffff14;
+  height: 40vh;
+}
+#card-testimonialse {
+  padding: 20px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 7%);
+  position: relative;
+  left: 25%;
+}
+#img-testimonialse {
+  max-width: 100%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  right: 50%;
+  top: -50px;
+  border: 10px solid #344a6b;
+  transform: translateX(50%);
+  z-index: 1;
+}
+.card-testimonials {
+  width: 50%;
+  background-color: white;
+  margin: auto;
+  transform: translate(-50%, 20%);
+}
+@media (max-width: 791px) {
+  .card-testimonials {
+    width: 80%;
+    margin: auto;
+    transform: translate(-35%, 19%);
+  }
+}
+input::placeholder {
+  color: red;
+  opacity: 0.5;
+}
+#btn-hover {
+  background-color: #ffcc00;
+}
+#btn-hover:hover {
+  background-color: #a78913;
+}
+.icnos-social {
+  font-size: 25px;
+  color: white;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: #0056b3;
+  transition: 0.3s;
+}
+.icnos-social:hover {
+  background-color: #007bff;
+  box-shadow: 0px 0px 5px 5px rgba(1, 153, 255, 0.596);
+}
+.link-footer {
+  font-size: 20px;
+  transition: 0.5s;
+  margin-bottom: 10px;
+}
+
+.link-footer:hover {
+  transform: translateX(15px);
+  box-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+#container-fluid {
+  width: 90%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+#container-fluid2 {
+  width: 90%;
+  margin: auto;
+}
+@media (max-width: 1250px) {
+  #container-fluid {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  #container-fluid2 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  #carousel2 {
+    height: 50vh;
+  }
+}
+.modal-content {
+  background-color: #021643;
+  box-shadow: 0px 0px 8px 1px #0052ff;
+}
+.modal-footer {
+  justify-content: start;
+}
+@media (max-width: 991px) {
+  #carousel .carousel-item h1 {  
+    font-size: 2rem;
+    padding-bottom: 20px;
+    width: 80%;
+    margin: auto;
+  }
+  #carousel .carousel-item p {  
+    margin-bottom: 20px;
+    width: 80%;
+    margin: auto;
+  }
+  .mohamed1{
+  font-size: 16px;
+}
+.carousel-indicators{
+  bottom: -10px;
+}
+}
+@media(max-width: 1200px) {
+  .card-services {
+    height: fit-content;
+  }
+}
